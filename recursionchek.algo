@@ -1,0 +1,15 @@
+FUNCTION palindrome(m:STRING) : BOOLEAN
+VAR
+ start,end:INTEGER
+BEGIN
+ IF (m.length <= 1) THEN
+    RETURN  true;
+ END_IF
+
+ IF (m[start]= m[end]) THEN
+   RETURN  palindrome(m,start+1,end-1)
+ELSE
+    RETURN false ;
+END_IF
+  RETURN 
+END
